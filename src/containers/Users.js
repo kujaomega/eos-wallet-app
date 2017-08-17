@@ -1,8 +1,8 @@
-import React, {Component} from 'react'
-import {Link} from 'react-router-dom'
-import {observer} from 'mobx-react'
-import List from '../components/List'
-import Icon from '../components/Icon'
+import React, {Component} from "react"
+import {Link} from "react-router-dom"
+import {observer} from "mobx-react"
+import List from "../components/List"
+import Icon from "../components/Icon"
 
 const User = ({ url, name, status }) => (
 	<Link to={url}>

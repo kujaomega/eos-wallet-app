@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
+import React from "react"
 
-const Icon = ({ alt = "Image", url, size = '' }) => (
+const Icon = ({ alt = "Image", url, size = "" }) => (
 	<figure>
 		<i
 			aria-label={alt}
@@ -10,4 +10,3 @@ const Icon = ({ alt = "Image", url, size = '' }) => (
 )
 
 export default Icon
-

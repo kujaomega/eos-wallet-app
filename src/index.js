@@ -1,13 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import {App} from './containers'
-import createHistory from 'history/createBrowserHistory'
-import {Router} from 'react-router'
+import React from "react"
+import ReactDOM from "react-dom"
+import {App} from "./containers"
+import createHistory from "history/createBrowserHistory"
+import {Router} from "react-router"
 
 // TODO assess if needed
-import registerServiceWorker from './func/registerServiceWorker'
+import registerServiceWorker from "./func/registerServiceWorker"
 
-import './styles/index.scss'
+import "./styles/includes.css"
 
 const history = createHistory()
 
@@ -15,8 +15,7 @@ ReactDOM.render(
 	<Router history={history}>
 		<App />
 	</Router>,
-	document.getElementById('root')
+	document.getElementById("root")
 )
 
 registerServiceWorker()
-

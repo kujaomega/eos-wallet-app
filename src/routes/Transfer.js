@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import TransferForm from '../components/forms/Transfer'
-import Transactions from '../containers/Transactions'
+import React, {Component} from "react"
+import TransferForm from "../components/forms/Transfer"
+import Transactions from "../containers/Transactions"
 
 class Transfer extends Component {
 	render() {

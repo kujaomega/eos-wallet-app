@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import {Users as UsersContainer} from '../containers'
+import React, { Component } from "react"
+import {Users as UsersContainer} from "../containers"
 
 class Users extends Component {
 	render() {
