@@ -2,6 +2,7 @@
   "name": "eosjs-ui",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://eosio.github.io/eos-wallet-app/",
   "dependencies": {
     "animated": "^0.2.0",
     "axios": "^0.16.2",
