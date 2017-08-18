@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 // import validation
 // import mutation
 
@@ -6,21 +6,36 @@ class ResetPassword extends Component {
 	render() {
 		return (
 			<form>
-				<fieldset>
-					<label>Current password</label>
-					<input type="text" />
+				<fieldset className="form-group">
+					<label htmlFor="currentPassword">Current password</label>
+					<input
+						aria-describedby="currentPassword"
+						className="form-control form-control-lg"
+						name="currentPassword"
+						required
+						type="text"
+					/>
 				</fieldset>
 
-				<fieldset>
-					<label>New password<label>
-					<input type="text" />
+				<fieldset className="form-group">
+					<label htmlFor="newPassword">New password</label>
+					<input
+						aria-describedby="newPassword"
+						className="form-control form-control-lg"
+						name="newPassword"
+						required
+						type="text"
+					/>
 				</fieldset>
 
-				<button type="submit">Sumbit</button>
+				<button
+					className="btn btn-primary btn-lg"
+					type="submit"
+				>Submit
+				</button>
 			</form>
 		)
 	}
 }
 
 export default ResetPassword
-

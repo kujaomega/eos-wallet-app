@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React, { Component } from 'react'
 
 const Err = () => (
 	<div>
@@ -8,4 +8,3 @@ const Err = () => (
 )
 
 export default Err
-

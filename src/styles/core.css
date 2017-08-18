@@ -1879,8 +1879,8 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .form-control-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 1.25rem;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
   border-radius: 0.3rem; }
 
 select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.form-control:not([size]):not([multiple]),
@@ -7428,46 +7428,97 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important; } }
 
 /*# sourceMappingURL=bootstrap.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  background: #434B54;
+  color: #fff; }
+
 .app {
   min-height: 100vh;
   display: flex;
   flex: 1;
-  padding: 0 !important; }
-
-.app-logo {
-  height: 80px; }
-
-.app-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white; }
-
-.app-intro {
-  font-size: large; }
+  align-items: stretch;
+  flex-direction: column; }
 
 .main-content {
   float: left;
   width: calc(100% - 275px);
-  padding: 2rem 2.5rem; }
-
-.section:not(:first-child) {
-  margin-top: 50px; }
-
-.module {
-  background-color: #575F68;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  border-radius: 12px;
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 2em; }
-  .module p {
-    margin-bottom: 0;
-    font-size: 90%;
-    font-weight: 200;
-    line-height: 1.75em; }
+  padding: 2rem 2.5rem;
+  flex: 1 0 auto; }
+  .main-content ul {
+    padding-left: 0;
+    list-style-type: none; }
+    .main-content ul li {
+      background-color: #575F68;
+      padding: .75rem 1.5rem;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      border-radius: 12px; }
+      .main-content ul li:nth-child(even) {
+        background-color: transparent; }
+  .main-content .section:not(:first-child) {
+    margin-top: 3rem; }
+  .main-content .module {
+    background-color: #575F68;
+    width: 100%;
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px; }
+    .main-content .module p {
+      margin-bottom: 0;
+      font-size: 90%;
+      font-weight: 200;
+      line-height: 1.5rem; }
+  .main-content .form-text {
+    float: right; }
+  .main-content input[type="text"].prefix {
+    padding-left: 4.5rem; }
+  .main-content .input-prefix {
+    position: relative; }
+    .main-content .input-prefix:before {
+      content: "@";
+      color: #333333;
+      text-align: center;
+      line-height: 3.25rem;
+      font-size: 110%;
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      width: 50px;
+      height: 52px;
+      background-color: #CCCCCC;
+      -webkit-border-radius: 0.25rem 0 0 0.25rem;
+      -moz-border-radius: 0.25rem 0 0 0.25rem;
+      -ms-border-radius: 0.25rem 0 0 0.25rem;
+      border-radius: 0.25rem 0 0 0.25rem; }
+  .main-content .module-search {
+    position: relative; }
+    .main-content .module-search input {
+      width: 250px;
+      height: 30px;
+      padding-left: 2.5rem;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px; }
+    .main-content .module-search:before {
+      font-family: 'icomoon' !important;
+      content: "\e905";
+      position: absolute;
+      left: 10px;
+      top: 5px;
+      color: #3a4249;
+      font-size: 90%; }
+  .main-content .export {
+    margin-right: .5rem;
+    color: #4B9AF5; }
+    .main-content .export:before {
+      font-size: 140%; }
 
 .flex-grow {
   flex: 1 0 auto; }
@@ -7481,6 +7532,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .space-between {
   justify-content: space-between; }
+
+.flex-fill {
+  display: flex;
+  flex: 1 0 auto;
+  align-self: stretch; }
 
 @font-face {
   font-family: 'icomoon';
@@ -7542,8 +7598,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   height: 90px;
   position: relative;
   overflow: visible;
-  width: 100%;
-  flex: 1 0 100%; }
+  width: 100%; }
+  .header .logo {
+    height: 55px; }
   .header .meta {
     position: absolute;
     top: 1.25rem;
@@ -7552,7 +7609,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     .header .meta .display-name {
       font-size: 175%;
       font-weight: 100;
-      line-height: 1em;
+      line-height: 1.5rem;
       margin-bottom: 0; }
     .header .meta .url {
       color: #6A7E95;
@@ -7560,17 +7617,18 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .header .thumbnail {
     position: absolute;
     top: 1.25rem;
-    right: 1.25rem;
-    width: 100px;
-    height: 100px;
-    border: 8px solid #D75F4C;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    border-radius: 50px; }
+    right: 1.25rem; }
+    .header .thumbnail .user-thumbnail {
+      width: 100px;
+      height: 100px;
+      border: 8px solid #D75F4C;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      border-radius: 50px; }
     .header .thumbnail .settings {
       position: absolute;
-      top: 45px;
+      top: 54px;
       left: -15px;
       width: 30px;
       height: 30px;
@@ -7586,6 +7644,18 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
         font-size: 90%;
         left: 3px;
         top: 3px; }
+
+footer {
+  margin-top: 9rem;
+  padding-top: .5rem;
+  border-top: 2px solid #575F68;
+  color: #575F68; }
+  footer a {
+    color: #575F68;
+    font-size: 80%; }
+    footer a:hover, footer a:active, footer a:visited, footer a:focus {
+      color: #69727C;
+      text-decoration: none; }
 
 .left-nav {
   background: #575F68;
@@ -7621,7 +7691,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       padding-left: 0; }
       .left-nav .-is-logged-in ul .col-link:before {
         color: #4B9AF5;
-        padding-right: .5em;
+        padding-right: .2rem;
         vertical-align: middle;
         font-family: 'icomoon' !important; }
       .left-nav .-is-logged-in ul .col-link:after {
@@ -7640,6 +7710,70 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
         -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#69727C', EndColorStr='#5B6168')"; }
       .left-nav .-is-logged-in ul .col-link:hover {
         background: #646d76; }
+
+.transaction .transaction-meta {
+  width: calc(100% - 160px); }
+
+.transaction .transaction-date {
+  text-align: center;
+  margin-right: 1.25rem; }
+  .transaction .transaction-date .date-month {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: 200; }
+  .transaction .transaction-date .date-day {
+    font-size: 130%;
+    font-weight: 200;
+    line-height: 90%; }
+
+.transaction .transaction-thumbnail {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  border: 3px solid #D75F4C;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
+.transaction .transaction-memo {
+  margin-left: 1.25rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 40px; }
+  .transaction .transaction-memo p {
+    margin: 0; }
+
+.transaction .transaction-amount-container {
+  width: 160px;
+  text-align: right; }
+  .transaction .transaction-amount-container .transaction-icon {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 40px;
+    margin-left: .25rem;
+    font-size: 80%; }
+  .transaction .transaction-amount-container .transaction-amount {
+    margin-bottom: 0;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 40px; }
+
+.user.transaction a:hover {
+  text-decoration: none; }
+
+.user.transaction .user-info {
+  margin-left: 1.25rem; }
+  .user.transaction .user-info .user-name {
+    color: #4B9AF5;
+    line-height: 120%; }
+  .user.transaction .user-info .user-memo {
+    color: white;
+    font-size: 90%; }
 
 .col-link {
   display: flex;
@@ -7670,9 +7804,3 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     line-height: 1.5;
     margin-right: .5em;
     color: #4B9AF5; }
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #434B54;
-  color: #fff; }

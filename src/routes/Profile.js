@@ -1,8 +1,8 @@
-import React, {Component} from "react"
+import React, { Component } from 'react'
 import {
 	User,
-	Transactions
-} from "../containers"
+	Transactions,
+} from '../containers'
 
 class Profile extends Component {
 	render() {
@@ -16,4 +16,3 @@ class Profile extends Component {
 }
 
 export default Profile
-

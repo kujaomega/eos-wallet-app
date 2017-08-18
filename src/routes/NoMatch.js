@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from 'react'
 
 const NoMatch = () => (
 	<div>
@@ -8,5 +8,3 @@ const NoMatch = () => (
 )
 
 export default NoMatch
-
-

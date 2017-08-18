@@ -1,4 +1,4 @@
-import React, {Component} from "react"
+import React, { Component } from 'react'
 
 class Keystore extends Component {
 	render() {
@@ -11,4 +11,3 @@ class Keystore extends Component {
 }
 
 export default Keystore
-
