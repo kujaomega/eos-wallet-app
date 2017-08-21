@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 // import mutation
 
 class TransferForm extends Component {
-
  static defaultProps = {
    balance: '0.000',
  }
@@ -90,17 +89,23 @@ class TransferForm extends Component {
          />
        </fieldset>
 
-       <button
-         className="btn btn-primary btn-lg"
-         type="submit"
-       >Submit
-       </button>
-       <button
-         className="btn btn-secondary btn-lg"
-         onClick={clearInputs}
-         type="button"
-       >Clear
-       </button>
+       <div className="row col-12 no-gutters p-0">
+         <div className="col-sm-auto col-6 pl-0 pr-2">
+           <button
+             className="btn btn-primary btn-lg btn-block"
+             type="submit"
+           >Submit
+           </button>
+         </div>
+         <div className="col-sm-auto col-6 pl-2 pr-0">
+           <button
+             className="btn btn-secondary btn-lg btn-block"
+             onClick={clearInputs}
+             type="button"
+           >Clear
+           </button>
+         </div>
+       </div>
      </form>
    );
  }
