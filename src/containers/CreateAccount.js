@@ -10,8 +10,12 @@ import {
 const CreateAccount = ({ children }) => (
   <div className="login">
     <div className="login-header modal-header">
-      <h2>Create your EOS account</h2>
-      <button className="js-modal-close">x</button>
+      <h2>
+      Create your EOS account
+      </h2>
+      <button type="button" className="js-modal-close">
+      x
+      </button>
     </div>
     <div className="modal-body">
       <div className="login-progress">

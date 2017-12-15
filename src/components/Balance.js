@@ -23,9 +23,16 @@ class Balance extends Component {
 
    return (
      <div className={className}>
-       <div className={styles.primary}>{account.value.name} EOS</div>
-       <div className={styles.balance}>{account.formattedBalance}</div>
-       <div className={styles.change}>{account.priceUpdate}</div>
+       <div className={styles.primary}>
+       {account.value.name} 
+       EOS
+       </div>
+       <div className={styles.balance}>
+       {account.formattedBalance}
+       </div>
+       <div className={styles.change}>
+       {account.priceUpdate}
+       </div>
      </div>
    );
  }

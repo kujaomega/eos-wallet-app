@@ -61,7 +61,7 @@ class App extends Component {
       nextProps.history.action !== 'POP' &&
       (!location.state || !location.state.modal)
     ) {
-      this.previousLocation = this.props.location;
+      this.previousLocation = location;
     }
   }
 

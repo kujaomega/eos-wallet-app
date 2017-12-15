@@ -7,7 +7,9 @@ class ResetPassword extends Component {
     return (
       <form>
         <fieldset className="form-group">
-          <label htmlFor="currentPassword">Current password</label>
+          <label htmlFor="currentPassword">
+          Current password
+          </label>
           <input
             aria-describedby="currentPassword"
             className="form-control form-control-lg"
@@ -18,7 +20,9 @@ class ResetPassword extends Component {
         </fieldset>
 
         <fieldset className="form-group">
-          <label htmlFor="newPassword">New password</label>
+          <label htmlFor="newPassword">
+          New password
+          </label>
           <input
             aria-describedby="newPassword"
             className="form-control form-control-lg"
@@ -31,7 +35,8 @@ class ResetPassword extends Component {
         <button
           className="btn btn-primary btn-lg"
           type="submit"
-        >Update Password
+        >
+        Update Password
         </button>
       </form>
     );

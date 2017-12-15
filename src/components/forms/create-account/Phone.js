@@ -2,11 +2,17 @@ import React from 'react';
 
 const Phone = () => (
   <form>
-    <h2>Next your phone</h2>
-    <p>Enter your phone below.</p>
+    <h2>
+    Next your phone
+    </h2>
+    <p>
+    Enter your phone below.
+    </p>
 
     <fieldset className="form-group">
-      <label htmlFor="username">Phone number</label>
+      <label htmlFor="username">
+      Phone number
+      </label>
       <div clasName="input-container">
         <div className="icon" />
         <div className="input-prefix">

@@ -7,7 +7,9 @@ class PreferencesForm extends Component {
     return (
       <form>
         <fieldset className="form-group">
-          <label htmlFor="pictureURL">Picture URL</label>
+          <label htmlFor="pictureURL">
+          Picture URL
+          </label>
           <input
             aria-describedby="pictureURL"
             className="form-control form-control-lg"
@@ -18,7 +20,9 @@ class PreferencesForm extends Component {
         </fieldset>
 
         <fieldset className="form-group">
-          <label htmlFor="displayName">Display Name</label>
+          <label htmlFor="displayName">
+          Display Name
+          </label>
           <input
             aria-describedby="displayName"
             className="form-control form-control-lg"
@@ -29,7 +33,9 @@ class PreferencesForm extends Component {
         </fieldset>
       
         <fieldset className="form-group">
-          <label htmlFor="about">About</label>
+          <label htmlFor="about">
+          About
+          </label>
           <input
             aria-describedby="about"
             className="form-control form-control-lg"
@@ -40,7 +46,9 @@ class PreferencesForm extends Component {
         </fieldset>
       
         <fieldset className="form-group">
-          <label htmlFor="location">Location</label>
+          <label htmlFor="location">
+          Location
+          </label>
           <input
             aria-describedby="location"
             className="form-control form-control-lg"
@@ -51,7 +59,9 @@ class PreferencesForm extends Component {
         </fieldset>
       
         <fieldset className="form-group">
-          <label htmlFor="website">Website</label>
+          <label htmlFor="website">
+          Website
+          </label>
           <input
             aria-describedby="website"
             className="form-control form-control-lg"
@@ -64,7 +74,8 @@ class PreferencesForm extends Component {
         <button
           className="btn btn-primary btn-lg"
           type="submit"
-        >Update Information
+        >
+        Update Information
         </button>
       </form>
     );

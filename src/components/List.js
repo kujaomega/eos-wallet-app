@@ -7,7 +7,10 @@ class List extends Component {
     return (
       <ul {...props}>
         {data.map((item, key) =>
-          <li key={item.id || key}>{renderItem({ key, ...item })}</li>)}
+          (<li key={item.id || key}>
+          {renderItem({ key, ...item })}
+          </li>))
+        }
       </ul>
     );
   }

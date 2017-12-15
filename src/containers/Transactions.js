@@ -7,8 +7,12 @@ const Transaction = ({ date, sender, memo, amount }) => (
   <div className="transaction d-flex flex-row">
     <div className="transaction-meta d-flex flex-row items-center">
       <div className="transaction-date">
-        <div className="date-month">{date.month}</div>
-        <div className="date-day">{date.day}</div>
+        <div className="date-month">
+          {date.month}
+        </div>
+        <div className="date-day">
+          {date.day}
+        </div>
       </div>
 
       <Icon
@@ -17,13 +21,17 @@ const Transaction = ({ date, sender, memo, amount }) => (
       />
 
       <div className="transaction-memo">
-        <p>{memo}</p>
+        <p>
+          {memo}
+        </p>
       </div>
     </div>
 
     <div className="transaction-amount-container d-flex flex-row-reverse items-center">
       <Icon className="transaction-icon icon-eos_icons_transfer_to" />
-      <p className="transaction-amount">{amount}</p>
+      <p className="transaction-amount">
+        {amount}
+      </p>
     </div>
   </div>
 );

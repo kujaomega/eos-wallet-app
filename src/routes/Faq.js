@@ -6,9 +6,13 @@ class Faq extends Component {
     return (
       <div>
         <Helmet>
-          <title>FAQs</title>
+          <title>
+          FAQs
+          </title>
         </Helmet>
-        <h1>FAQs</h1>
+        <h1>
+        FAQs
+        </h1>
       </div>
     );
   }

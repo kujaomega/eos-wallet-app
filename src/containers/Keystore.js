@@ -4,7 +4,9 @@ class Keystore extends Component {
   render() {
     return (
       <div>
-        <h2>Keystore data</h2>
+        <h2>
+        Keystore data
+        </h2>
       </div>
     );
   }

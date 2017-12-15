@@ -7,12 +7,16 @@ class TransactionHistory extends Component {
     return (
       <div>
         <Helmet>
-          <title>Transaction History</title>
+          <title>
+          Transaction History
+          </title>
         </Helmet>
         <div className="container-full">
           <div className="d-md-flex justify-content-between items-center">
             <div>
-              <h2>Transaction History</h2>
+              <h2>
+              Transaction History
+              </h2>
             </div>
             <div className="d-flex items-center mb-2 mb-md-0">
               <div className="export icon-eos_icons_export" />

@@ -44,7 +44,9 @@ class TransferForm extends Component {
    return (
      <form>
        <fieldset className="form-group">
-         <label htmlFor="to">To</label>
+         <label htmlFor="to">
+         To
+         </label>
          <div className="input-prefix">
            <input
              aria-describedby="to"
@@ -60,8 +62,16 @@ class TransferForm extends Component {
 
        <fieldset className="form-group">
          <div>
-           <small className="form-text text-muted"><a>Balance: {balance} EOS</a></small>
-           <label htmlFor="amount">Amount</label>
+           <small className="form-text text-muted">
+             <a>
+              Balance:
+              {balance} 
+              EOS
+             </a>
+           </small>
+           <label htmlFor="amount">
+           Amount
+           </label>
            <input
              aria-describedby="amount"
              className="form-control form-control-lg"
@@ -77,7 +87,9 @@ class TransferForm extends Component {
        </fieldset>
 
        <fieldset className="form-group">
-         <label htmlFor="memo">Memo</label>
+         <label htmlFor="memo">
+         Memo
+         </label>
          <input
            aria-describedby="emailHelp"
            className="form-control form-control-lg"
@@ -94,7 +106,8 @@ class TransferForm extends Component {
            <button
              className="btn btn-primary btn-lg btn-block"
              type="submit"
-           >Submit
+           >
+           Submit
            </button>
          </div>
          <div className="col-sm-auto col-6 pl-2 pr-0">
@@ -102,7 +115,8 @@ class TransferForm extends Component {
              className="btn btn-secondary btn-lg btn-block"
              onClick={clearInputs}
              type="button"
-           >Clear
+           >
+           Clear
            </button>
          </div>
        </div>

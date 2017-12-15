@@ -9,9 +9,13 @@ class Login extends Component {
 
     return (
       <form>
-        <p>This operation requires your Active Key or Master password.</p>
+        <p>
+        This operation requires your Active Key or Master password.
+        </p>
         <fieldset className="form-group">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username">
+          Username
+          </label>
           <div clasName="input-container">
             <div className="icon" />
             <div className="input-prefix">
@@ -29,7 +33,9 @@ class Login extends Component {
         </fieldset>
 
         <fieldset className="form-group">
-          <label htmlFor="username">Password</label>
+          <label htmlFor="username">
+          Password
+          </label>
           <input
             aria-describedby="password"
             className="form-control form-control-lg"
@@ -41,23 +47,26 @@ class Login extends Component {
         </fieldset>
 
         <fieldset className="form-group">
-          <label htmlFor="keepLoggedIn">Keep me logged in</label>
+          <label htmlFor="keepLoggedIn">
+          Keep me logged in
+          </label>
           <input name="keepLoggedIn" type="checkbox" className="ml-2" />
         </fieldset>
 
         <div className={`button-group ${modal && 'modal-cta'}`}>
-        <div className="row col-12 no-gutters p-0">
-          <div className="col-sm-auto col-12 pl-0 pr-sm-2 pr-0 mb-3">
-            <button
-              className="btn btn-primary btn-lg btn-block"
-              type="submit"
-            >
+          <div className="row col-12 no-gutters p-0">
+            <div className="col-sm-auto col-12 pl-0 pr-sm-2 pr-0 mb-3">
+              <button
+                className="btn btn-primary btn-lg btn-block"
+                type="submit"
+              >
               Login
-            </button>
-          </div>
+              </button>
+            </div>
           <div className="col-sm-auto col-12 p2-2 pl-sm-2 pl-0 mb-3">
             {modal &&
               <button
+                type="submit"
                 className="btn btn-secondary btn-lg btn-block"
                 onClick={handleClose}
               >
@@ -65,7 +74,9 @@ class Login extends Component {
               </button>}
             </div>
             <div className="col-12 text-center text-sm-left">
-              <Link to="/create-account" className="text-link">Don't have an account?</Link>
+              <Link to="/create-account" className="text-link">
+              Don't have an account?
+              </Link>
             </div>
           </div>
         </div>

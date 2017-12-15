@@ -7,12 +7,16 @@ class Users extends Component {
     return (
       <div>
         <Helmet>
-          <title>Users</title>
+          <title>
+          Users
+          </title>
         </Helmet>
         <div className="container-full">
           <div className="d-md-flex justify-content-between items-center">
             <div>
-              <h2>Users</h2>
+              <h2>
+              Users
+              </h2>
             </div>
             <div className="items-center mb-2 mb-md-0">
               <div className="module-search">

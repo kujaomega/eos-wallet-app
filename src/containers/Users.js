@@ -13,8 +13,13 @@ const User = ({ url, name, status, icon }) => (
           url={icon}
         />
         <div className="user-info">
-          <div className="user-name">{name}Demo Name</div>
-          <div className="user-memo">{status}</div>
+          <div className="user-name">
+          {name}
+          Demo Name
+          </div>
+          <div className="user-memo">
+          {status}
+          </div>
         </div>
       </div>
     </Link>

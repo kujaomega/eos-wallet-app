@@ -7,11 +7,15 @@ class Preferences extends Component {
     return (
       <div className="profile">
         <Helmet>
-          <title>Preferences</title>
+          <title>
+          Preferences
+          </title>
         </Helmet>
         <div className="row">
           <div className="col-12">
-            <h2>Preferences</h2>
+            <h2>
+            Preferences
+            </h2>
           </div>
         </div>
         <div className="row">
@@ -19,7 +23,9 @@ class Preferences extends Component {
             <PreferencesForm />
           </div>
           <div className="hidden-md-down col-lg-6">
-            <h5>Profile Preview</h5>
+            <h5>
+            Profile Preview
+            </h5>
             <div className="module">
               <div className="d-flex flex-row items-center">
                 <img alt="" className="user-thumbnail" src="images/male_2.jpg" />
@@ -37,7 +43,9 @@ class Preferences extends Component {
               </div>
               <div className="d-flex flex-row">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a elit pulvinar, varius mauris non, condimentum tellus. Maecenas vitae ultrices diam. Lorem ipsum dolor sit amet, consectetur elit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a elit pulvinar,
+                   varius mauris non, condimentum tellus. Maecenas vitae ultrices diam. Lorem
+                   ipsum dolor sit amet, consectetur elit.
                 </p>
               </div>
             </div>
